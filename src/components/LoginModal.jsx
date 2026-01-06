@@ -22,7 +22,7 @@ const LoginModal = ({ show, close }) => {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://securehostel-backend.onrender.com/api/auth/login",
         { username, password }
       );
 
